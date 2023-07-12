@@ -21,5 +21,24 @@ Após a venda de um NFT, o contrato é acionado automaticamente e realiza todas 
 
 Esse projeto visa fornecer um meio confiável e transparente para a prestação de serviço através de NFTs, garantindo a segurança e privacidade do cliente e registrando a resposta como prova da execução do serviço.
 
+# Desafio de Integração com Serviços Externos
+Este projeto enfrenta o desafio de integrar um contrato inteligente Ethereum com serviços externos, considerando as diferenças fundamentais entre os protocolos da blockchain Ethereum e os protocolos de API.
+
+Os protocolos da blockchain Ethereum são determinísticos, imutáveis e exigem consenso entre todos os nós da rede. Por outro lado, os protocolos de API, como as solicitações HTTPS, são mutáveis e estão sujeitos a alterações ao longo do tempo.
+
+Para resolver esse desafio e permitir a interação entre o contrato inteligente e serviços externos, algumas abordagens possíveis podem ser consideradas:
+
+Contratos intermediários: Implementar contratos intermediários que atuam como ponte entre o contrato Ethereum e os serviços externos. Esses contratos intermediários podem receber solicitações do contrato Ethereum e, em seguida, executar ações nas APIs externas em nome do contrato.
+
+Integração com oráculos: Utilizar serviços de oráculo, como o Chainlink, para obter dados externos confiáveis dentro do contrato Ethereum. Os oráculos podem fornecer informações externas verificadas e permitir que o contrato tome decisões baseadas nesses dados.
+
+Utilização de eventos e webhooks: Se a API externa suportar eventos e webhooks, poderá ser possível emitir eventos do contrato Ethereum quando ocorrerem eventos específicos. Em seguida, a API externa pode ser configurada para receber esses eventos e realizar as ações apropriadas.
+
+Integração manual: Executar ações fora do escopo da blockchain Ethereum. Isso pode envolver o uso de servidores externos ou tarefas programadas para consultar o contrato Ethereum e interagir com os serviços externos.
+
+É importante considerar a segurança, a privacidade e a escalabilidade ao lidar com a integração entre o contrato Ethereum e os serviços externos. Além disso, é essencial analisar as implicações legais e regulatórias ao realizar interações com APIs externas.
+
+Esse desafio proporciona uma oportunidade para explorar soluções criativas e implementar estratégias eficientes para a integração entre a blockchain Ethereum e serviços externos, superando as diferenças fundamentais entre os protocolos envolvidos.
+
 # Observações
 É importante ressaltar que este projeto é apenas um exemplo e requer personalizações adicionais, como a implementação das funcionalidades de criação de sala privada no Discord e envio de e-mails. Além disso, é fundamental considerar questões legais e regulatórias relacionadas à prestação de serviços em sua jurisdição ao utilizar este contrato.
